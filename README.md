@@ -26,7 +26,7 @@ Some "global" options are available:
 
 
 
-Resolving Path and Database Path
+Database Path and Resolving Filename
 --------------------------------
 
 
@@ -45,7 +45,7 @@ Options:
 * `<file>` : (Mandatory) File path of annotation
 * `-l|--line <num>` : Line number for annotation. If omitted or `0` is given,
 the annotation is considered to be for the file as a whole
-* `-a|--append|-u|--update` : This options change behaviors when a annotations
+* `-a|--append|-u|--update` : This options change behaviors when a annotation
 already exist for specified file and line. If `-a` or `--append` is given,
 text is appended to the existing annotation (this is default). If `-u|--update`
 is given, the annotation is overwritten by new text. In this case, give
@@ -61,7 +61,7 @@ Query
 Query stored annotations.
 
     $ annot q[uery] [-f|--file <file>] [-l|--line <num>] [-s|--search <text>]
-                  [-1|--oneline] [-f|--format <format>]
+                    [-1|--oneline] [-f|--format <format>]
 
 Options:
 
@@ -71,7 +71,7 @@ Options:
     * `-s|--search <text>` : Search text from annotations
 * Printing:
     * `-1|--oneline` : Show only first line of annotations
-    * `-f|--format` : Print result in given format like `{file}|{line}|{text}`
+    * `-f|--format` : Print result in given format like `{file}:{line}:{text}`
     (this is used by default)
 
 
