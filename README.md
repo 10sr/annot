@@ -38,11 +38,12 @@ Add
 
 Add/update annotations.
 
-    $ annot a[dd] <file> [-l|--line <num>] [-a|--append|-u|--update][<text>]
+    $ annot a[dd] -f|--file <file> [-l|--line <num>] [-a|--append|-u|--update]
+                  [<text>]
 
 Options:
 
-* `<file>` : (Mandatory) File path of annotation
+* `-f|--file <file>` : (Mandatory) File path of annotation
 * `-l|--line <num>` : Line number for annotation. If omitted or `0` is given,
 the annotation is considered to be for the file as a whole
 * `-a|--append|-u|--update` : This options change behaviors when a annotation
@@ -61,7 +62,7 @@ Query
 Query stored annotations.
 
     $ annot q[uery] [-f|--file <file>] [-l|--line <num>] [-s|--search <text>]
-                    [-1|--oneline] [-f|--format <format>]
+                    [-1|--oneline] [--format <format>]
 
 Options:
 
@@ -71,7 +72,7 @@ Options:
     * `-s|--search <text>` : Search text from annotations
 * Printing:
     * `-1|--oneline` : Show only first line of annotations
-    * `-f|--format` : Print result in given format like `{file}:{line}:{text}`
+    * `--format` : Print result in given format like `{file}:{line}:{text}`
     (this is used by default)
 
 
