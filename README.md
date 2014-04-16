@@ -1,7 +1,7 @@
 annot
 =====
 
-Annotate Source Code.
+Annotate source code without modifying original code.
 
 Annotations are saved into single sqlite files.
 
